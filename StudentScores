@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class StudentScores {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      final int SCORES_SIZE = 4;               // Number of elements
+      int[] oldScores = new int[SCORES_SIZE];   // User numbers
+      int[] newScores = new int[SCORES_SIZE]; // New numbers
+      int i;      
+                              // Loop index
+       for (i = 0; i < oldScores.length; ++i) {
+         oldScores[i] = scnr.nextInt();
+      }
+
+      for (i = 0; i < oldScores.length - 1; ++i) {
+         int temp = oldScores[0]; 
+         newScores[i] = oldScores[i + 1];
+         newScores[SCORES_SIZE - 1] = temp;
+      }
+
+         for (i = 0; i < newScores.length; ++i) {
+            System.out.print(newScores[i] + " ");
+         }
+   }
+}
