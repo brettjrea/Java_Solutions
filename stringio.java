@@ -1,5 +1,3 @@
-package stringio;
-
 import java.util.Scanner;
 import java.io.FileInputStream;
 import java.io.PrintWriter;
@@ -20,11 +18,11 @@ public class stringio {
 	      PrintWriter outFS = null;	
 
 	      System.out.println("Opening input file input.in.");
-	      fileByteStream = new FileInputStream("src/stringio/input.in");
+	      fileByteStream = new FileInputStream("input.in");
 	      inFS = new Scanner(fileByteStream);
 	      
 	      System.out.println("Opening output file results.out.");
-	      fileStream = new FileOutputStream("src/stringio/results.out");
+	      fileStream = new FileOutputStream("results.out");
 	      outFS = new PrintWriter(fileStream);
 
 	      System.out.println("Reading and printing numbers.");

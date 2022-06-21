@@ -1,5 +1,5 @@
-It took 3 contributions to reach the goal.
-The maximum contribution received was $4000000.0
-The minimum contribution received was $1000000.0
-The average contribution received was 2333333.3333333335.
-A total of 7000000.0 was collected.
+It took 10 contributions to reach the goal.
+The maximum contribution received was $1000000.0
+The minimum contribution received was $10.0
+The average contribution received was 111125.0.
+A total of 1111250.0 was collected.

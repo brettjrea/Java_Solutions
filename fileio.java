@@ -1,12 +1,10 @@
-package stringio2;
-
 import java.util.Scanner;
 import java.io.FileInputStream;
 import java.io.PrintWriter;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class stringio2 {
+public class fileio {
 	public static void main(String[] args) throws IOException {
 	      FileInputStream fileByteStream = null; // File input stream
 	      Scanner inFS = null;                   // Scanner object
@@ -21,13 +19,13 @@ public class stringio2 {
 	      PrintWriter outFS = null;				 //Writer object
 	      
 	      // Try to open input file
-	      System.out.println("Opening input file input.in.");
-	      fileByteStream = new FileInputStream("src/stringio2/input.in");
+	      System.out.println("Opening input file myfile.txt.");
+	      fileByteStream = new FileInputStream("myfile.txt");
 	      inFS = new Scanner(fileByteStream);
 	      
 	      // Try to open output file
-	      System.out.println("Opening output file results.out.");
-	      fileStream = new FileOutputStream("src/stringio2/results.out");
+	      System.out.println("Opening output filemyoutfile.txt.");
+	      fileStream = new FileOutputStream("myoutfile.txt");
 	      outFS = new PrintWriter(fileStream);
 
 
@@ -66,7 +64,8 @@ public class stringio2 {
 	      outFS.println("A total of " + totalNum + " was collected.");
 	      outFS.close(); // Done with file, so try to close it
 	      
-	      System.out.println("Closing file input.in.");
+	      System.out.println("Closing file myfile.txt.");
+		  System.out.println("Closing file myoutfile.txt.");
 	      fileByteStream.close(); // close() may throw IOException if fails
 	      
 	}
