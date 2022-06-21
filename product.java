@@ -17,5 +17,6 @@ public class product {
       System.out.println(" ");
       System.out.printf("%.3f", average);
       System.out.println(" ");
+      scnr.close();
    }
 }

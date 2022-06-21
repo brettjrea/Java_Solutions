@@ -1,3 +1,5 @@
+package fileio;
+
 import java.util.Scanner;
 import java.io.FileInputStream;
 import java.io.PrintWriter;
@@ -19,13 +21,13 @@ public class fileio {
 	      PrintWriter outFS = null;				 //Writer object
 	      
 	      // Try to open input file
-	      System.out.println("Opening input file myfile.txt.");
-	      fileByteStream = new FileInputStream("myfile.txt");
+	      System.out.println("Opening input file fileio/input.in.");
+	      fileByteStream = new FileInputStream("fileio/input.in");
 	      inFS = new Scanner(fileByteStream);
 	      
 	      // Try to open output file
-	      System.out.println("Opening output filemyoutfile.txt.");
-	      fileStream = new FileOutputStream("myoutfile.txt");
+	      System.out.println("Opening output file fileio/results.out.");
+	      fileStream = new FileOutputStream("fileio/results.out");
 	      outFS = new PrintWriter(fileStream);
 
 
@@ -64,9 +66,10 @@ public class fileio {
 	      outFS.println("A total of " + totalNum + " was collected.");
 	      outFS.close(); // Done with file, so try to close it
 	      
-	      System.out.println("Closing file myfile.txt.");
-		  System.out.println("Closing file myoutfile.txt.");
+	      System.out.println("Closing file fileio/input.in.");
+		  System.out.println("Closing file fileio/results.out.");
 	      fileByteStream.close(); // close() may throw IOException if fails
+		  inFS.close();
 	      
 	}
 	}

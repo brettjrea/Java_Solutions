@@ -14,20 +14,22 @@ public class ArrayListADT {
    }
 
    public static void main(String [] args) {
-      Scanner scnr = new Scanner(System.in);
-      ArrayList<Integer> numsList = new ArrayList<Integer>();
-      int userInput;
-      int i;
+      try (Scanner scnr = new Scanner(System.in)) {
+         ArrayList<Integer> numsList = new ArrayList<Integer>();
+         int userInput;
+         int i;
 
-      for (i = 0; i < 3; ++i) {
-         userInput = scnr.nextInt();
-         numsList.add(userInput);
+         for (i = 0; i < 3; ++i) {
+            userInput = scnr.nextInt();
+            numsList.add(userInput);
+         }
+
+         numsList.remove(1);
+         numsList.add(0,100);
+         numsList.add(2,102);
+
+         printArrayList(numsList);
+         scnr.close();
       }
-
-      numsList.remove(1);
-      numsList.add(0,100);
-      numsList.add(2,102);
-
-      printArrayList(numsList);
    }
 }

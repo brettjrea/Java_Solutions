@@ -5,7 +5,7 @@ public class HelloWorld {
 		System.out.println("Hello, my name is " + name);
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		HelloWorld hello = new HelloWorld();
 		hello.sayHello("brett");
 	}

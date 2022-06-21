@@ -32,6 +32,6 @@ public class FiveDigit {
 	      sumDigits = firstDigit + secondDigit + thirdDigit + fourthDigit + fifthDigit;
 	      
 	      System.out.println("The sum of the digits is" + " " + firstDigit + " + " + secondDigit + " + " + thirdDigit + " + " + fourthDigit + " + " + fifthDigit + " = " + sumDigits);	 
-	      
+		  scnr.close(); 
 }
 }

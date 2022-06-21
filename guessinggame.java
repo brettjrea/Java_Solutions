@@ -39,5 +39,6 @@ public class guessinggame {
 		} while (!(lastGuess == randomNum));
 
 		System.out.println("WINNER");
+		scnr.close();
 	}
 }

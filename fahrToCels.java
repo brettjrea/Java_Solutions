@@ -28,5 +28,6 @@ public class fahrToCels {
 	      System.out.print((int)celsIn + "C is equivalent to ");
 	      System.out.printf("%.2f", tmpVal2);
 	      System.out.printf("F");
+		  scnr.close();
 }
 }

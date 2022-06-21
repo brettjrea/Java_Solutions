@@ -11,7 +11,7 @@ public class StringSize {
       stringSize = userInput.length();
 
       System.out.println("Size of userInput: " + stringSize);
-
+      scnr.close();
       if (stringSize % 2 == 0) {
       System.out.println("even");
       }
@@ -19,5 +19,7 @@ public class StringSize {
       System.out.println("odd");
       }
       return;
+     
    }
+ 
 }
