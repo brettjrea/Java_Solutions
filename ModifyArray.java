@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ModifyArray {
 
-    pupublicpupublicblicpupublicpupublicblicblicpupublicpupublicblicpupublicpupublicblicblicblipupublicpupublicblicpupublicpupublicblicblicpupublicpupublicblicpupublicpupublicblicblicblicblicpupublicpupublicblicpupublicpupublicblicblicpupublicpupublicblicpupublicpupublicblicblicblipupublicpupublicblicpupublicpupublicblicblicpupublicpupublicblicpupublicpupublicblicblicblicbliccbliccblic static void swapArrayEnds(int[] arrVals) {
+    public static void swapArrayEnds(int[] arrVals) {
         int i; 
         int firstIndex = 0;
         int firstNum = arrVals[firstIndex];
