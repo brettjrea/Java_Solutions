@@ -1,0 +1,39 @@
+//////////////////////////////////////////////////////////////
+		while (inFS.hasNext()) {
+			int totalRow = 4;
+			int totalColumn = 8;
+			
+			char[][] myArray = new char[totalRow][totalColumn];
+			
+			for (int row = 0; inFS.hasNext() && row < totalRow; row++) {
+				char[] chars = inFS.next().toCharArray();				
+////////////////////////////////////////////////////////								
+				if (row % 2 == 0 ) {
+					for (int j = 0; j < totalColumn; j++)
+						myArray[row][j] = chars[j] == ' ' ? '*' : chars[j];
+				} else {
+					for (int j = 0; j < chars.length; j++)
+						myArray[row][chars.length-j-1] = chars[j] == ' ' ? '*' : chars[j];
+				} 
+			}			
+////////////////////////////////////////////////////	
+			for (int i = 0; i < myArray.length; i++) {
+				for (int j = 0; j < myArray[i].length; j++) {
+					System.out.format("%s", myArray[i][j]);
+					j = j++;					
+				}
+				i = i++;
+				System.out.println();				
+			}			
+/////////////////////////////////////////			
+			System.out.println();				
+/////////////////////////////////////////					
+			String s = "";
+		for (int j = 0; j < myArray[0].length; j++) {
+			for (int i = 0; i < myArray.length; i++) {	
+				s += myArray[i][j];
+			}							
+		}	
+		s.toString();
+		System.out.print(s);	
+	}			
