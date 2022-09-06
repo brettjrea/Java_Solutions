@@ -1,2 +1,2 @@
 # Java
-A Collection of the Java files I have created since starting CST-105.
+A collection of Java projects from intro to Java.
