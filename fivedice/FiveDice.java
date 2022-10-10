@@ -1,5 +1,5 @@
-package dice;
-public class Dice {
+package fivedice;
+public class FiveDice {
 
     public static void main(String[] args) {
 

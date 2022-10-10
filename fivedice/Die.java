@@ -1,4 +1,4 @@
-package dice;
+package fivedice;
 public class Die {
 
     private int value;
