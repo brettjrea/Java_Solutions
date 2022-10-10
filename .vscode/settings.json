@@ -2,5 +2,6 @@
     "java.project.sourcePaths": [
         "twodimensionalarray",
         ""
-    ]
+    ],
+    "java.autobuild.enabled": false
 }
